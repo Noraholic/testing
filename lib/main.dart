@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
         ),
         body: const Center(
           child: Text(
-            'Hello! I am learning Flutter step by step.',
-            style: TextStyle(fontSize: 30),
+            'step by step syapa',
+            style: TextStyle(fontSize: 60),
           ),
         ),
       ),
