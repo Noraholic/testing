@@ -22,7 +22,7 @@ void main(){
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  width: 200,
+                  width: 400,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
