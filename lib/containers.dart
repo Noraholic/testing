@@ -13,68 +13,69 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.amber,
-          title: Text('my app'),
+          title: Text('Test'),
         ),
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+         // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+         mainAxisSize: MainAxisSize.min,
           children: [
             Row(
               children: [
                 Container(
                   margin: EdgeInsets.symmetric(),
-                  color: Colors.blue,
+                  color: Colors.red,
                   height: 200,
                   width: 200,
-                  child: Text('flutter app code',
-                  style: TextStyle(
-                    fontSize: 40,
-                    color: Colors.black,
-
-                  )
+                 
+                  ),
+                  Container(
+                  margin: EdgeInsets.symmetric(),
+                  color: Colors.green,
+                  height: 400,
+                  width: 200,
                 ),
-                ),
-                 Container(
+                // Container(
+                //   margin: EdgeInsets.symmetric(),
+                //   color: Colors.lightGreenAccent,
+                //   height: 200,
+                //   width: 200,
+                // ),
+                 Row(
+                   children: [
+                     Container(
+                      margin: EdgeInsets.symmetric(),
+                      color: Colors.blue,
+                      height: 200,
+                      width: 200,
+                     
+                                     ),
+              Container(
+                  margin: EdgeInsets.symmetric(),
+                  color: Colors.black,
+                  height: 200,
+                  width: 200,
+              ),
+                   
+                
+                Container(
                   margin: EdgeInsets.symmetric(),
                   color: Colors.orange,
                   height: 200,
                   width: 200,
                  
-                ),
-                Container(
+                ),Container(
                   margin: EdgeInsets.symmetric(),
-                  color: Colors.yellow,
+                  color: Colors.purple,
                   height: 200,
                   width: 200,
-                 
-                ),
-          
+            ),
+  ],
+                 ),
               ],
             ),
-             Row(
-              children: [
-                Container(
-                  margin: EdgeInsets.symmetric(),
-                  color: Colors.deepPurple,
-                  height: 200,
-                  width: 200,
-                ),
-                  Container(
-                  margin: EdgeInsets.symmetric(),
-                  color: Colors.cyanAccent,
-                  height: 200,
-                  width: 200,
-                ),
-                 Container(
-                  margin: EdgeInsets.symmetric(),
-                  color: Colors.pink,
-                  height: 200,
-                  width: 200,
-                ),
-              ],
-             ),
           ],
-        ),
       ),
+    ),
     );
     
   }

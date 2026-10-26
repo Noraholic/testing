@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'gradientColor.dart';
-
+import 'TestFile.dart';
 void main(){
-  runApp(const GradientColor());
-
+  runApp( MyApp());
 }
+
