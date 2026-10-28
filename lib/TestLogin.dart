@@ -15,6 +15,11 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   bool showPassword = true;
   final passwordController = TextEditingController();
+  List<String> students = [
+    'Noor','Hooria','Dia','Jannat','Izhan'
+  ];
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,30 +28,20 @@ class _MyAppState extends State<MyApp> {
           backgroundColor: const Color.fromARGB(255, 74, 28, 82),
           title: Text('TestPage'),
         ),
-        body: Column(
-          children: [
-            TextField(
-              controller: passwordController,
-              obscureText: showPassword,
-              decoration: InputDecoration(
-                hintText: 'password',
-                border: OutlineInputBorder(),
-                prefix: Icon(Icons.password),
-                  suffixIcon: IconButton(onPressed: (){
-                    setState(() {
-                       showPassword = !showPassword;
-                    });
-                  }, 
-                  icon: Icon(Icons.remove_red_eye))
+           body: ListView(
+            children: [
+             ListTile(
+              leading: CircleAvatar(
+                child: Icon(Icons.person),
               ),
-            ),
-            ElevatedButton(onPressed: (){
-               print(passwordController.text);
-            }, 
-            child: Text("login")),
-          ],
-        ),
-      ),
-    );
+              title: Text('ali'),
+              subtitle: Text('hello'),
+              trailing: Icon(Icons.arrow_forward),
+             )
+            ],
+           ),
+             
+           ),
+      );
   }
 }
