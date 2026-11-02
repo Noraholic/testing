@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:project_application/main.dart';
+
 
 
 void main(){
@@ -79,7 +79,7 @@ class _MyAppState extends State<MyApp> {
                             // Navigator.push(context, MaterialPageRoute(builder: (context) => 
                             //    ChatHistory(name: students[index]),));
 
-                            Get.to(ChatUserInterface(name: students[index], n: index));
+                            Get.to((name: students[index], n: index));
                           },
                           leading: CircleAvatar(
                             child: Icon(Icons.person),
